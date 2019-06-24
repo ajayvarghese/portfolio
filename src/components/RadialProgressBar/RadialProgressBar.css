@@ -1,0 +1,44 @@
+.radial-progress-bar {
+  position: relative;
+}
+
+.progress {
+  transform: rotate(-90deg);
+}
+
+.progress-meter,
+.progress-value {
+  fill: none;
+}
+
+.progress-value {
+  transition: 0.8s ease-in all;
+}
+
+.display-text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #1cbc9b;
+  font-weight: 300;
+}
+
+.rotate {
+  fill: white;
+  animation: rotate 1.8s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

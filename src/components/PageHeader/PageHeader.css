@@ -1,0 +1,87 @@
+.wrapper {
+  height: 70px;
+  border-bottom: 1px solid #525457;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.header_wrapper {
+  /*height: 70px;*/
+  /*border: 1px solid #2D3134;*/
+  color: rgba(255, 255, 255, .7);
+}
+
+.header_wrapper_title {
+}
+
+.header_wrapper h1 {
+  margin-left: 29px;
+  font-weight: 100;
+  color: #FFFFFF;
+  font-size: 1.4em;
+  letter-spacing: 6px;
+  line-height: 16px;
+}
+
+.headerContent {
+  font-weight: 900;
+}
+
+.header {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 3.33px;
+}
+
+.header1 {
+  font-weight: 100;
+  padding-right: 6px;
+}
+
+.pageTitle {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.back_link {
+
+}
+
+.back_link {
+  height: 25px;
+  width: 16px;
+  position: absolute;
+  left: 105px;
+  top: 30px;
+}
+
+.back_link:before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  margin: auto;
+  background: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.back_link:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+

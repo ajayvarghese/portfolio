@@ -1,0 +1,9 @@
+.wrapper {
+  flex: 1;
+  background: #F5F5F5;
+}
+
+.iframe {
+  width: 100%;
+  height: calc(100vh - 76px);
+}

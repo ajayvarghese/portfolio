@@ -1,0 +1,50 @@
+{
+  "name": "Ajay Varghese",
+  "firstname": "Ajay",
+  "lastname": "Varghese",
+  "description": "Experienced Interface Specialist with a demonstrated history of working in the computer software industry. Skilled in React, HTML, CSS, jQuery, javascript. Strong information technology professional with a Bachelor of Technology (B.Tech.) focused on Information Technology from Toc-H Institute of Science & Technology. ",
+  "designation": "Front-end Developer",
+  "location": "Kochi, Kerala, India 682315",
+  "contact-no": "+91 9633127552",
+  "email": "ajayvarghese003@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/ajay-varghese-162b9a3b",
+  "github#1": "https://github.com/ajayvarghese003",
+  "github#2": "https://github.com/ajayvarghese",
+  "stackoverflow": "https://stackoverflow.com/users/2003630/ajay-varghese",
+  "experience": [{
+    "year": "2014 - present",
+    "company": "Razorthink Technologies Pvt Ltd",
+    "designation": "Senior Software Engineer"
+  }, {
+    "year": "2013 - 2014",
+    "company": "Think Force Software Solutions",
+    "designation": "Trainee Software Engineer"
+  }],
+  "education": [{
+    "year": "2010 - 2014",
+    "institution": "CUSAT University",
+    "degree": "Bachelors in Information Technology"
+  }, {
+    "year": " - 2010",
+    "institution": "Kerala State Board",
+    "degree": "Higher Secondary Schooling"
+  }],
+  "skills": {
+    "Basics" : {"HTML" : 95, "CSS": 96, "JS": 90, "ES6": 85},
+    "HTML/CSS Framework": {"Bootstrap": 50, "Materialize": 46, "SASS": 45},
+    "JS Frameworks": {"React": 90, "Webpack": 70, "JQuery": 70, "D3": 60, "NodeJS": 40},
+    "React tools": {"Redux": 80, "React-Router": 78, "Immutable": 30, "Recharts" : 90},
+    "CMS": {"Hubspot": 80},
+    "VCS": {"Git": 90}
+  },
+  "skills_informal": [
+    "Static side of Web - HTML, CSS, SVG, Canvas, Bootstrap, SASS, Materialise",
+    "Can Make it dynamic - Javascript, React, JQuery, ES6, D3",
+    "Backed by - NodeJS, MongoDB",
+    "Communications through - Rest, WS, socket.io",
+    "CMS - Hubspot",
+    "React tools - Redux, React-Router, Immutable, Recharts",
+    "Bundling tool - Webpack",
+    "VCS - Git"
+  ]
+}

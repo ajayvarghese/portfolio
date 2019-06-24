@@ -1,0 +1,39 @@
+.wrapper {
+  font-size: 1.4em;
+  padding: 1.5em;
+  width: 574px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.input_wrapper {
+
+}
+
+.question_input {
+  border-radius: 1rem;
+  background-color: #ffffff;
+  color: #2e2e2e;
+  height: 5rem;
+  border: none;
+  width: 100%;
+  padding: 0 2rem;
+  font-size: inherit;
+  box-sizing: border-box;
+}
+
+.list {
+  margin-top: 1rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  flex: 1;
+}
+
+.response_list {
+
+}

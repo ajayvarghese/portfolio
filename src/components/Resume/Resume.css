@@ -1,0 +1,308 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.left_panel {
+  width: 360px;
+  background: #2e2e2e;
+  color: #9a9a9c;
+}
+
+.left_panel__section {
+  margin: 50px 0;
+}
+
+.left_panel__section_list li {
+  margin-bottom: 20px;
+}
+
+.left_panel__section_list .icon {
+  width: 20px;
+  height: 20px;
+  color: var(--accent);
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.follow_link {
+  display: flex;
+  color: inherit;
+}
+
+.follow_link:hover {
+  color: var(--accent);
+}
+
+.image_wrapper {
+  height: 360px;
+  overflow: hidden;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.profile_pic {
+  width:100%;
+}
+
+.desig {
+  font-size: 1.6rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 600;
+  margin: 10px 0 10px;
+}
+
+.meta_wrapper {
+  padding: 50px;
+}
+
+.light {
+
+}
+
+.name {
+  text-transform: uppercase;
+  font-size: 3.2rem;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 3px;
+  max-width: 280px;
+  line-height: 3.4rem;
+}
+
+.name .light {
+  font-weight: 300;
+}
+
+
+
+.desig {
+
+}
+
+.about_me {
+
+}
+
+.section_header {
+  color: var(--accent);
+  margin-bottom: 3.2rem;
+  padding-bottom: 12px;
+  position: relative;
+}
+
+.section_header:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  border-bottom: 1px solid var(--accent);
+  width: 100%;
+  opacity: 0.4;
+}
+
+.section_header:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  height: 3px;
+  border-radius: 15px;
+  background: var(--accent);
+  left: 0;
+  max-width: 100px;
+  width: 30%;
+  opacity: 0.6;
+}
+
+.contact {
+
+}
+
+.section_header {
+
+}
+
+.icon {
+
+}
+
+.location_ico {
+
+}
+
+.phone_ico {
+
+}
+
+.email {
+
+}
+
+.contact {
+
+}
+
+.section_header {
+
+}
+
+.timeline_body {
+}
+
+.timeline_body h4 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: .5rem;
+}
+
+.right_panel {
+  flex: 1;
+  padding: 110px 70px;
+}
+
+.right_panel section {
+  margin-bottom: 50px;
+}
+
+.right_panel section .section_header {
+  margin-bottom: 35px;
+}
+
+.skills_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.skill_item {
+  display: flex;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex: 0 0 auto;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.skill_icon {
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+}
+
+.skill_category {
+  flex: 0 0 auto;
+  margin-right: 70px;
+  max-width: 430px;
+}
+
+.skill_category > h3 {
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  padding-bottom: 15px;
+  max-width: 220px;
+  margin-bottom: 30px;
+}
+
+.skill_info {
+  color: #2e2e2e;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.skill_info > h3 {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/*ICONS*/
+
+
+.html {
+  background-image: url('./../../assets/images/html.png');
+}
+
+.css {
+  background-image: url('./../../assets/images/css.png');
+  background-size: 70% ;
+}
+
+.js {
+  background-image: url('./../../assets/images/js.png');
+  background-size: 70%;
+}
+
+.es6 {
+  background-image: url('./../../assets/images/es6.png');
+}
+
+.bootstrap {
+  background-image: url('./../../assets/images/bootstrap.jpg');
+}
+
+.materialize {
+  background-image: url('./../../assets/images/materialize.svg');
+}
+
+.sass {
+  background-image: url('./../../assets/images/sass.png');
+}
+
+.react {
+  background-image: url('./../../assets/images/react.png');
+}
+
+.webpack {
+  background-image: url('./../../assets/images/webpack.png');
+}
+
+.jquery {
+  background-image: url('./../../assets/images/jquery.png');
+}
+
+.d3 {
+  background-image: url('./../../assets/images/d3.png');
+}
+
+.nodejs {
+  background-image: url('./../../assets/images/nodejs.png');
+}
+
+.redux {
+  background-image: url('./../../assets/images/redux.png');
+}
+
+.react-router {
+  border-radius: 50%;
+  background-color: #2e2e2e;
+  background-image: url('./../../assets/images/react-router.png');
+  background-size: 64%;
+}
+
+.immutable {
+  background-image: url('./../../assets/images/immutable.jpeg');
+  background-size: 150%;
+}
+
+.recharts {
+  background-image: url('./../../assets/images/recharts.png');
+  background-size: 103%;
+}
+
+.hubspot {
+  background-image: url('./../../assets/images/hubspot.svg');
+}
+
+.git {
+  background-image: url('./../../assets/images/github.png');
+}

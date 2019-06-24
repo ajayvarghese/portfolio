@@ -1,0 +1,188 @@
+.wrapper {
+  position: relative;
+  max-width: 465px;
+  width: 100%;
+  display: inline-block;
+  margin-bottom: .2rem;
+  align-self: flex-end;
+}
+
+.wrapper.own {
+  align-self: flex-start;
+  padding-right: 46px;
+}
+
+.wrapper:not(.own) {
+  padding-left: 46px;
+}
+
+.wrapper.own .time,
+.wrapper.own .message {
+  right: auto;
+  left: 0;
+}
+
+.wrapper.own .message {
+  border-radius: 0 10px 10px 10px;
+  background-color: #F4F4F4;
+  color: #2E2E2E;
+}
+
+.selected.message {
+  background: #3699FD;
+  color: #ffffff;
+}
+
+.wrapper.selected .button,
+.wrapper:hover .button {
+  opacity: 1;
+}
+
+.wrapper.selected .button {
+  background: #4F4F4F url('./../../../../assets/images/thumb-up_selected.png') no-repeat center center;
+  background-size: 15px;
+}
+
+.button.delete {
+  background: #4F4F4F url('./../../../../assets/images/rubbish-bin.png') no-repeat center center;
+  right: 0;
+  left: auto;
+  opacity: 0;
+  background-size: 17px;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.button.delete:hover {
+  background: #F44336 url('./../../../../assets/images/rubbish-bin-white.png') no-repeat center center;
+  background-size: 17px;
+}
+
+.time {
+  color: rgba(255, 255, 255, .5);
+  font-size: 10px;
+  line-height: 11px;
+  position: absolute;
+  bottom: 100%;
+  padding: .3rem 0;
+  right: 0;
+  left: auto;
+}
+
+.message {
+  border-radius: 0 10px 10px 10px;
+  background-color: #3F3F3F;
+  padding: 1.2rem 1.5rem;
+  color: #ffffff;
+  transition: .15s ease-in all;
+  font-size: 1.3rem;
+  line-height: 1.4em;
+}
+
+.wrapper:not(.own) .message {
+  cursor: pointer;
+}
+
+.wrapper:not(.own) .message:not(.selected):hover {
+  background: #585858;
+}
+
+.confidence {
+  color: #ffffffb3;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  margin-top: .9rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.confidence > span:first-child {
+  padding-right: 1rem;
+}
+
+.confidence > span:last-child {
+  padding-left: 1rem;
+}
+
+.button {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  transition: 0.12s ease-in all;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  border: none;
+  margin-right: 1em;
+  background: #4F4F4F url('./../../../../assets/images/thumb-up.png') no-repeat center center;
+  background-size: 15px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #585858;
+}
+
+.response_list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  align-items: flex-end;
+}
+
+.response_list .wrapper .message {
+  border-radius: 10px 0 0 10px;
+}
+
+.response_list .wrapper:nth-last-of-type(1) .message {
+  border-radius: 10px 0 10px 10px;
+}
+
+.show_more {
+  height: 33px;
+  width: 95px;
+  border-radius: 10px;
+  background-color: #3F3F3F;
+  border: none;
+  color: rgba(255, 255, 255, .7);
+  font-size: 11px;
+  line-height: 13px;
+  transition: .14s ease-in all;
+  cursor: pointer;
+  margin-left: 2px;
+}
+
+.show_more:hover {
+  background-color: #585858;
+}
+
+.loader {
+  transform: scale(0.26) translate(-50%, -50%);
+  left: 50%;
+}
+
+.incoming_msg {
+  composes: show_more;
+  width: 50px;
+  margin-bottom: 2px;
+}
+
+.btn_wrapper {
+  display: flex;
+}
+
+.wrapper {
+  animation: entry 0.18s ease-in;
+}
+
+@keyframes entry {
+  from {
+    transform: translateY(-10px);
+    opacity: .7;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
