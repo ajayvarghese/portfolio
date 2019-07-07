@@ -36,7 +36,9 @@ module.exports = {
             localIdentName: process.env.NODE_ENV === 'development' ? "[name]__[local]___[hash:base64:5]" : "[hash:base64:5]",
           }
         },
-        { loader: 'postcss-loader', options: {
+        {
+          loader: 'postcss-loader',
+          options: {
             ident: 'postcss',
             plugins: () => [  
               postcssPresetEnv(/* pluginOptions */)
