@@ -13,8 +13,7 @@
     "dev:start": {
       "command": "webpack-dev-server --config ./webpack/webpack.config.js --port 8000 --mode development --open --hot",
       "env": {
-        "NODE_ENV": "development",
-
+        "NODE_ENV": "development"
       }
     },
     "server:dev": {
