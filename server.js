@@ -30,6 +30,6 @@ app.use('*', process.env.NODE_ENV === 'development' ?
   : express.static(__dirname +'/build/')
 );
 
-app.listen(3000, function () {
-  console.log('Mail Server: Listening on port 3000!');
+app.listen(process.env.PORT, function () {
+  console.log(`Server: Listening on port ${process.env.PORT}!`);
 });
