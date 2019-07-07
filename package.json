@@ -14,20 +14,21 @@
       "command": "webpack-dev-server --config ./webpack/webpack.config.js --port 8000 --mode development --open --hot",
       "env": {
         "NODE_ENV": "development",
-        "PORT": 3000
+
       }
     },
     "server:dev": {
       "command": "node server.js",
       "env": {
         "NODE_ENV": "development",
-        "PORT": 80
+        "PORT": 3000
       }
     },
     "server:prod": {
       "command": "node server.js",
       "env": {
-        "NODE_ENV": "production"
+        "NODE_ENV": "production",
+        "PORT": 80
       }
     },
     "build": {
