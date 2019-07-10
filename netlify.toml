@@ -1,6 +1,8 @@
 [[redirects]]
-  from = "/mail"
-  to = "http://35.239.209.158:3000"
+  from = "/mail/*"
+  to = "http://35.239.209.158:3000/:splat"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/*"
