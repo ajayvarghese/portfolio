@@ -6,7 +6,11 @@ const config = {
   mode: 'development',
   devServer: {
     proxy: {
-      '/rest': 'http://192.168.49.65:9999/'
+      '/rest': 'http://192.168.49.65:9999/',
+      '/mail': {
+        target: 'http://35.239.209.158:3000',
+        pathRewrite: {'^/mail' : ''}
+      }
     }
   }
 };

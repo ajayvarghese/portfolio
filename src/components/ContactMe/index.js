@@ -35,7 +35,7 @@ const ContactMe = () => {
     e.preventDefault();
     console.log('Submitted', e.target);
     const { email, name, message, phone } = formData;
-    fetch('/contact-submit', {
+    fetch('/mail/send-mail', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

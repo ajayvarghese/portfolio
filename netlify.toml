@@ -1,0 +1,8 @@
+[[redirects]]
+  from = "/mail"
+  to = "http://35.239.209.158:3000"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

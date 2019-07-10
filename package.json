@@ -4,7 +4,7 @@
   "description": "Personal portfolio ",
   "main": "server.js",
   "scripts": {
-    "start": "concurrently \"better-npm-run dev:start\" \"better-npm-run server:dev\"",
+    "start": "better-npm-run dev:start",
     "build": "better-npm-run build && better-npm-run server:prod",
     "build:profile": "rimraf build && webpack --config ./webpack/webpack.prod.js --mode production --profile --json > stats.json",
     "serve": "http-server ./build -p 8880"
@@ -14,20 +14,6 @@
       "command": "webpack-dev-server --config ./webpack/webpack.config.js --port 8000 --mode development --open --hot",
       "env": {
         "NODE_ENV": "development"
-      }
-    },
-    "server:dev": {
-      "command": "node server.js",
-      "env": {
-        "NODE_ENV": "development",
-        "PORT": 3000
-      }
-    },
-    "server:prod": {
-      "command": "node server.js",
-      "env": {
-        "NODE_ENV": "production",
-        "PORT": 80
       }
     },
     "build": {
