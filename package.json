@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "better-npm-run dev:start",
-    "build": "better-npm-run build && better-npm-run server:prod",
+    "build": "better-npm-run build",
     "build:profile": "rimraf build && webpack --config ./webpack/webpack.prod.js --mode production --profile --json > stats.json",
     "serve": "http-server ./build -p 8880"
   },
