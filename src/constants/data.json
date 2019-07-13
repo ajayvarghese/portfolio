@@ -14,11 +14,13 @@
   "experience": [{
     "year": "2014 - present",
     "company": "Razorthink Technologies Pvt Ltd",
-    "designation": "Senior Software Engineer"
+    "designation": "Senior Software Engineer",
+    "link": "https://www.razorthink.com/"
   }, {
     "year": "2013 - 2014",
     "company": "Think Force Software Solutions",
-    "designation": "Trainee Software Engineer"
+    "designation": "Trainee Software Engineer",
+    "link": "http://thinkforce.in/"
   }],
   "education": [{
     "year": "2010 - 2014",
@@ -32,7 +34,7 @@
   "skills": {
     "Basics" : {"HTML" : 95, "CSS": 96, "JS": 90, "ES6": 85},
     "HTML/CSS Framework": {"Bootstrap": 50, "Materialize": 46, "SASS": 45},
-    "JS Frameworks": {"React": 90, "Webpack": 70, "JQuery": 70, "D3": 60, "NodeJS": 40},
+    "JS Frameworks": {"React": 90, "Webpack": 70, "JQuery": 70, "D3": 60, "NodeJS": 40, "Express":  50},
     "React tools": {"Redux": 80, "React-Router": 78, "Immutable": 30, "Recharts" : 90},
     "CMS": {"Hubspot": 80},
     "VCS": {"Git": 90}

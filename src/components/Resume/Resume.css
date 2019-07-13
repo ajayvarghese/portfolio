@@ -7,10 +7,30 @@
   width: 360px;
   background: #2e2e2e;
   color: #9a9a9c;
+  position: relative;
 }
 
 .left_panel__section {
   margin: 50px 0;
+}
+
+.disclaimer {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 30px;
+}
+
+.disclaimer > a {
+  color: var(--accent);
+  text-decoration: underline;
+  padding-left: 10px;
+}
+
+.disclaimer > i {
+  color: var(--accent);
+  font-size: 20px;
+  position: absolute;
+  margin-left: -13px;
 }
 
 .left_panel__section_list li {
@@ -37,8 +57,25 @@
 .image_wrapper {
   height: 360px;
   overflow: hidden;
-  padding: 16px;
+  /*padding: 16px;*/
+  /*box-sizing: border-box;*/
+
+
   box-sizing: border-box;
+  border-radius: 50%;
+  width: 230px;
+  height: 230px;
+  margin: 50px auto 14px;
+  flex: 0 0 auto;
+}
+
+.avatar {
+
+}
+
+.name_desig {
+  padding-left: 50px;
+  margin-top: 50px;
 }
 
 .profile_pic {
@@ -56,7 +93,7 @@
 }
 
 .meta_wrapper {
-  padding: 50px;
+  padding: 0 50px 50px;
 }
 
 .light {
@@ -151,10 +188,19 @@
 .timeline_body {
 }
 
+.timeline_link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .timeline_body h4 {
   font-weight: 600;
   font-size: 1.8rem;
   margin-bottom: .5rem;
+}
+
+.timeline_link:hover h4 {
+  color: var(--accent);
 }
 
 .right_panel {
@@ -305,4 +351,32 @@
 
 .git {
   background-image: url('./../../assets/images/github.png');
+}
+
+.express {
+  background-image: url('./../../assets/images/express.png');
+  background-size: 107%;
+  background-color: #fcfcfc;
+}
+
+@media all and (max-width: 812px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .left_panel {
+    width: auto;
+  }
+
+  .avatar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .image_wrapper {
+    margin: 0;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
 }

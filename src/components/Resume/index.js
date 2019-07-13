@@ -12,15 +12,19 @@ import ContactMe from './../../components/ContactMe';
 
 const LeftPanel = () => (
   <aside className={styles.left_panel}>
-    <div className={styles.image_wrapper}>
-      <img src={dp} className={styles.profile_pic} alt={'Profile pic'}/>
+    <div className={styles.avatar}>
+      <div className={styles.image_wrapper}>
+        <img src={dp} className={styles.profile_pic} alt={'Profile pic'}/>
+      </div>
+      <div className={styles.name_desig}>
+        <div className={styles.name}>
+          <span className={styles.light}>{data.firstname}</span>
+          {" "}{data.lastname}
+        </div>
+        <div className={styles.desig}>{data.designation}</div>
+      </div>
     </div>
     <div className={styles.meta_wrapper}>
-      <div className={styles.name}>
-        <span className={styles.light}>{data.firstname}</span>
-        {" "}{data.lastname}
-      </div>
-      <div className={styles.desig}>{data.designation}</div>
       <div className={styles.left_panel__section}>
         <h2 className={styles.section_header}>ABOUT ME</h2>
         <p>{data.description}</p>
@@ -66,6 +70,10 @@ const LeftPanel = () => (
         </ul>
       </div>
     </div>
+    <div className={styles.disclaimer}>
+      <i>*</i>Basic portfolio site done using React, Webpack, NodeJS and HTML, CSS and Webpack Setup are made from scratch, No external frameworks used.
+      <a href="https://github.com/ajayvarghese/portfolio" target="_blank">Github Link</a>
+    </div>
   </aside>
 );
 
@@ -75,11 +83,16 @@ const Main = () => (
       <h2 className={styles.section_header}>EXPERIENCE</h2>
       <Timeline
         data={data.experience}
-        rightComp={({ year, designation, company, desc}) => <div className={styles.timeline_body}>
-          <h4>{company}</h4>
-          <span>{designation}</span>
-          <p>{desc}</p>
-        </div>}
+        rightComp={({ year, designation, company, desc, link }) =>{
+          const comp = <div className={styles.timeline_body}>
+            <h4>{company}</h4>
+            <span>{designation}</span>
+            <p>{desc}</p>
+          </div>
+          return link ? <a href={link} target={"_blank"} className={styles.timeline_link}>
+              {comp}
+          </a> : <div>{comp}</div>
+        }}
       />
     </section>
     <section>

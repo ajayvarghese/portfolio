@@ -66,3 +66,77 @@
   border-radius: 3px;
   color: #fff;
 }
+
+.success_msg {
+  font-size: 16px;
+  color: #4CAF50;
+  display: flex;
+  align-items: center;
+}
+
+.error_msg {
+  font-size: 16px;
+  color: #FF5722;
+  display: flex;
+  align-items: center;
+}
+
+span.tick-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  position: relative;
+  margin-right: 10px;
+  flex: 0 0 auto;
+}
+
+span.tick-icon:after {
+  content: '';
+  width: 12px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 12px;
+  left: 9px;
+}
+
+span.tick-icon:before {
+  content: '';
+  width: 4px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transform: rotate(45deg);
+  top: 14px;
+  left: 7px;
+}
+
+
+span.error-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #FF5722;
+  position: relative;
+  margin-right: 10px;
+  flex: 0 0 auto;
+}
+
+span.error-icon:after, span.error-icon:before {
+  content: '';
+  width: 12px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 12px;
+  left: 9px;
+}
+
+span.error-icon:before {
+  transform: rotate(45deg);
+}

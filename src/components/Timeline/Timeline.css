@@ -12,6 +12,7 @@
   width: 165px;
   font-weight: 600;
   font-size: 1.8rem;
+  flex: 0 0 auto;
 }
 
 .item:last-child .right {
