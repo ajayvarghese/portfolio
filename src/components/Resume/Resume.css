@@ -251,6 +251,7 @@
   flex: 0 0 auto;
   margin-right: 70px;
   max-width: 430px;
+  width: 100%;
 }
 
 .skill_category > h3 {
