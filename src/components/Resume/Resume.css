@@ -367,6 +367,11 @@
 
   .left_panel {
     width: auto;
+    padding-bottom: 70px;
+  }
+
+  .disclaimer {
+    padding-bottom: 30px;
   }
 
   .avatar {

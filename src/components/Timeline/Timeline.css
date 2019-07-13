@@ -52,3 +52,9 @@
   background: var(--accent);
   transform: translateX(calc(-50% + 1px));
 }
+
+@media all and (max-width: 812px) {
+  .left {
+    width: 90px;
+  }
+}
