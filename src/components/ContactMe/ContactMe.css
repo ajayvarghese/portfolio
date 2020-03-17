@@ -134,7 +134,7 @@ span.error-icon:after, span.error-icon:before {
   position: absolute;
   transform: rotate(-45deg);
   top: 12px;
-  left: 9px;
+  left: 7px;
 }
 
 span.error-icon:before {
