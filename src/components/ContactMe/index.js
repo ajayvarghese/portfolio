@@ -24,7 +24,7 @@ FormField.propTypes = {
 
 const ContactMe = () => {
   const [ formVisibility, setFormVisibility ] = useState(false);
-  const [ formSubmitted, setFormSubmitted] = useState(false);
+  const [ formSubmitted, setFormSubmitted ] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });
   const handleInputChange = (e) => {
     setFormData({

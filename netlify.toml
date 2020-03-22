@@ -1,6 +1,6 @@
 [[redirects]]
   from = "/mail/*"
-  to = "http://35.239.209.158:3000/:splat"
+  to = "https://my-mail-server.herokuapp.com/:splat"
   status = 200
   force = true
 
