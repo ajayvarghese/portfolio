@@ -8,6 +8,13 @@
   background: #2e2e2e;
   color: #9a9a9c;
   position: relative;
+  animation: leftPanelEntry 0.35s ease-in-out;
+}
+
+@keyframes leftPanelEntry {
+  from {
+    transform: translateX(-40%);
+  }
 }
 
 .left_panel__section {
@@ -60,7 +67,6 @@
   /*padding: 16px;*/
   /*box-sizing: border-box;*/
 
-
   box-sizing: border-box;
   border-radius: 50%;
   width: 230px;
@@ -70,7 +76,6 @@
 }
 
 .avatar {
-
 }
 
 .name_desig {
@@ -79,7 +84,7 @@
 }
 
 .profile_pic {
-  width:100%;
+  width: 100%;
 }
 
 .desig {
@@ -97,7 +102,6 @@
 }
 
 .light {
-
 }
 
 .name {
@@ -114,14 +118,10 @@
   font-weight: 300;
 }
 
-
-
 .desig {
-
 }
 
 .about_me {
-
 }
 
 .section_header {
@@ -142,6 +142,7 @@
 
 .section_header:after {
   content: "";
+  animation: sectionHeaderEntry 0.6s ease-in;
   position: absolute;
   bottom: -1px;
   height: 3px;
@@ -153,36 +154,34 @@
   opacity: 0.6;
 }
 
-.contact {
+@keyframes sectionHeaderEntry {
+  from {
+    width: 0;
+  }
+}
 
+.contact {
 }
 
 .section_header {
-
 }
 
 .icon {
-
 }
 
 .location_ico {
-
 }
 
 .phone_ico {
-
 }
 
 .email {
-
 }
 
 .contact {
-
 }
 
 .section_header {
-
 }
 
 .timeline_body {
@@ -196,7 +195,7 @@
 .timeline_body h4 {
   font-weight: 600;
   font-size: 1.8rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .timeline_link:hover h4 {
@@ -206,6 +205,13 @@
 .right_panel {
   flex: 1;
   padding: 110px 70px;
+  animation: rightPanelEntry 0.35s ease-in-out;
+}
+
+@keyframes rightPanelEntry {
+  from {
+    opacity: 0.1;
+  }
 }
 
 .right_panel section {
@@ -255,7 +261,7 @@
 }
 
 .skill_category > h3 {
-  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 15px;
   max-width: 220px;
   margin-bottom: 30px;
@@ -274,88 +280,87 @@
 
 /*ICONS*/
 
-
 .html {
-  background-image: url('./../../assets/images/html.png');
+  background-image: url("./../../assets/images/html.png");
 }
 
 .css {
-  background-image: url('./../../assets/images/css.png');
-  background-size: 70% ;
+  background-image: url("./../../assets/images/css.png");
+  background-size: 70%;
 }
 
 .js {
-  background-image: url('./../../assets/images/js.png');
+  background-image: url("./../../assets/images/js.png");
   background-size: 70%;
 }
 
 .es6 {
-  background-image: url('./../../assets/images/es6.png');
+  background-image: url("./../../assets/images/es6.png");
 }
 
 .bootstrap {
-  background-image: url('./../../assets/images/bootstrap.jpg');
+  background-image: url("./../../assets/images/bootstrap.jpg");
 }
 
 .materialize {
-  background-image: url('./../../assets/images/materialize.svg');
+  background-image: url("./../../assets/images/materialize.svg");
 }
 
 .sass {
-  background-image: url('./../../assets/images/sass.png');
+  background-image: url("./../../assets/images/sass.png");
 }
 
 .react {
-  background-image: url('./../../assets/images/react.png');
+  background-image: url("./../../assets/images/react.png");
 }
 
 .webpack {
-  background-image: url('./../../assets/images/webpack.png');
+  background-image: url("./../../assets/images/webpack.png");
 }
 
 .jquery {
-  background-image: url('./../../assets/images/jquery.png');
+  background-image: url("./../../assets/images/jquery.png");
 }
 
 .d3 {
-  background-image: url('./../../assets/images/d3.png');
+  background-image: url("./../../assets/images/d3.png");
 }
 
 .nodejs {
-  background-image: url('./../../assets/images/nodejs.png');
+  background-image: url("./../../assets/images/nodejs.png");
 }
 
 .redux {
-  background-image: url('./../../assets/images/redux.png');
+  background-image: url("./../../assets/images/redux.png");
 }
 
 .react-router {
   border-radius: 50%;
   background-color: #2e2e2e;
-  background-image: url('./../../assets/images/react-router.png');
+  background-image: url("./../../assets/images/react-router.png");
   background-size: 64%;
 }
 
 .immutable {
-  background-image: url('./../../assets/images/immutable.jpeg');
+  background-image: url("./../../assets/images/immutable.jpeg");
   background-size: 150%;
 }
 
 .recharts {
-  background-image: url('./../../assets/images/recharts.png');
+  background-image: url("./../../assets/images/recharts.png");
   background-size: 103%;
 }
 
 .hubspot {
-  background-image: url('./../../assets/images/hubspot.svg');
+  background-image: url("./../../assets/images/hubspot.svg");
 }
 
 .git {
-  background-image: url('./../../assets/images/github.png');
+  background-image: url("./../../assets/images/github.png");
 }
 
 .express {
-  background-image: url('./../../assets/images/express.png');
+  background-image: url("./../../assets/images/express.png");
   background-size: 107%;
   background-color: #fcfcfc;
 }
