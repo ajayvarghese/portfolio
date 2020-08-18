@@ -54,9 +54,7 @@ const ContactMe = () => {
 
   useEffect(() => {
     function clickHandler(e) {
-      console.log(!e.path.includes(document.getElementById('form')), formVisibility, !e.path.includes(document.getElementById('form')) && formVisibility);
       if (!e.path.includes(document.getElementById('form')) && !e.path.includes(document.getElementById('contactMeBtn'))) {
-        console.log('In');
         setFormVisibility(false)
       }
     }
