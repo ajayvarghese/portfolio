@@ -1,14 +1,18 @@
 import React from 'react';
 import styles from './App.css';
 import Resume from './../../components/Resume';
+import TRANSFORMERCONSOLE from './constants' 
 
-class App extends React.Component {
-  render(){
+const App = () => {
+    React.useEffect(() => {
+      console.log(TRANSFORMER)
+    },[])
     return (
       <div className={styles.wrapper}>
         <Resume />
-    </div>)
-  }
+      </div>
+    )
+
 }
 
 export default App;
