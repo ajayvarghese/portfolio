@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './App.css';
 import Resume from './../../components/Resume';
-import TRANSFORMERCONSOLE from './constants' 
+import { TRANSFORMER } from './../../constants/console' 
 
 const App = () => {
     React.useEffect(() => {
